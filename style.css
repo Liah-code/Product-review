@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',  sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-one{
+    width: 50%;
+}
+.card-one img{
+    width: 100%;
+    height: 100%;
+}
+/*--------------------Right-----------------------*/
+.card-two{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.perfume{
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.floral{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 15px;
+}
+.price{
+    width: 50%;
+}
+.price h2{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.6rem;
+    color: hsl(158, 36%, 37%);
+}
+.price-2{
+    width: 50%;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 40px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: hsl(158, 66%, 14%);
+}
+button img{
+    padding-right: 5px;
+}
+@media (max-width: 376px){
+
+    main{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .card-one {
+        width: 100%;
+    }
+    .card-one img{
+        height: 250px;
+        object-fit: cover;
+    }
+    .card-two{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
